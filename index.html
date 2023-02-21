@@ -1,3 +1,147 @@
-Hello, World
+<!DOCTYPE html>
+<html lang="fr-FR">
 
-<a href=index.html>CV</a>
+<head>
+	<title>Logan Letellier - Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+
+<style>
+	@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+	@import 'https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap';
+
+	body {
+		font-family: "Didact Gothic", "Futura", "Tw Cen MT", sans-serif;
+	}
+</style>
+
+<body>
+	<nav class="navbar" role="navigation">
+		<div class="navbar-brand">
+			<a href="#" class="navbar-item title is-5">Logan LETELLIER - Étudiant en développement</a>
+			<a role="button" class="navbar-burger" data-target="navbar">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</div>
+		<div id="navbar" class="navbar-menu">
+			<div class="navbar-end">
+				<a href="#about" class="button navbar-item">À propos</a>
+				<a href="#portfolio" class="button navbar-item">Réalisations</a>
+				<a href="#resources" class="button navbar-item">Ressources</a>
+				<a href="#contact" class="button navbar-item">Contact</a>
+			</div>
+		</div>
+	</nav>
+
+	<section id="about" class="section">
+		<h2 class="title">À propos</h2>
+		<div class="tile is-ancestor">
+			<div class="tile is-parent is-vertical">
+				<div class="tile is-child is-primary notification">
+					<h2 class="title is-4">Ma présentation</h2>
+					<p>
+						Je suis actuellement étudiant en deuxième année de BTS SIO option SLAM.<br />
+						J'étudie par correspondance avec le CNED à l'aide du <a href="https://gip-cei.com/campus-connecte-redon/" target="_blank">Campus Connecté de Redon</a>.<br />
+					</p>
+				</div>
+			</div>
+			<div class="tile is-vertical">
+				<div class="tile is-parent">
+					<div class="tile is-child is-danger notification">
+						<h2 class="title is-4">Mes compétences</h2>
+						<p>
+							J'effectue principalement du développement back-end avec principalement Java, Rust et Python.<br />
+							Je possède aussi de l'expérience sur le framework front-end Qt.
+						</p>
+					</div>
+				</div>
+				<div class="tile is-parent">
+					<div class="tile is-child is-warning notification">
+						<h2 class="title is-4">Mes hobbies</h2>
+						<p>
+							TODO
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="portfolio" class="section">
+		<h2 class="title">Réalisations</h2>
+		<div class="tile is-ancestor">
+			<div class="tile is-parent">
+				<div class="tile is-child is-info notification">
+					<h2 class="title is-4">Stage à HTTProject</h2>
+					<a href="https://httproject.fr" target="_blank" class="subtitle is-6">Site de l'entreprise</a>
+					<p>
+						HTTProject est une entreprise qui s'occupe de la gestion d'équipements d'automatisation.<br />
+						J'ai travaillé dans la section spécialisée dans le pilotage et la supervision d'équipements relatifs à la gestion de l'eau.<br />
+						J'ai participé à la mise à jour d'un système d'interaction après le changement d'un des composant du système.
+					</p>
+				</div>
+			</div>
+			<div class="tile is-parent">
+				<div class="tile is-child is-primary notification">
+					<h2 class="title is-4">Stage au lycée Marcel Callo</h2>
+					<a href="https://www.lyceemarcelcallo.org/" target="_blank" class="subtitle is-6">Site de l'établissement</a>
+					<p>
+						J'ai travaillé avec le responsable informatique de l'établissement.<br />
+						J'ai mis en place un système de <a href="https://fr.wikipedia.org/wiki/Plan_particulier_de_mise_en_s%C3%BBret%C3%A9" target="_blank">PPMS</a> en Python pour celui-ci,
+						et mis à jour un gestionnaire de paquets PHP/HTML, en ajoutant un fichier de configuration pour autogénérer l'affichage de la page.<br />
+						J'ai aussi participé à la préparation d'équipement informatique pour l'utilisation de l'établissement.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--
+	<section id="resources" class="section">
+		<h2 class="title">Veille technologique</h2>
+		<h3>À ce jour, ma veille informatique consiste notamment de vidéos de ces chaînes (dont le contenu est en anglais):</h3>
+		<p>
+			
+			Mental Outlaw: - <a href="https://www.youtube.com/@MentalOutlaw" target="_blank">Youtube</a> - <a href="https://odysee.com/@AlphaNerd:8" target="_blank">Odysee</a><br />
+			Fireship - <a href="https://www.youtube.com/@Fireship" target="_blank">Youtube</a><br />
+		</p>
+	</section>
+-->
+	<section id="contact" class="hero is-info">
+		<div class="hero-body">
+			<h2 class="title">Contact</h2>
+			<nav class="level is-mobile">
+				<a href="https://github.com/loggeek" target="_blank" class="button is-link level-item" has-text-centered>GitHub</a>
+				<a href="mailto:lletellier.contact@gmail.com" class="button is-link level-item has-text-centered">E-Mail</a>
+			</nav><br />
+			<a href="cv.pdf" class="button is-primary">Obtenir mon CV</a>
+		</div>
+		<div class="hero-foot" align="center">
+			Copyright 2022 Logan LETELLIER. Tous droits réservés.<br />
+			<a href="https://bulma.io" target="_blank"><img src="https://bulma.io/images/made-with-bulma--white.png" style="width: 10%;"/></a>.
+		</div>
+	</section>
+</body>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		// Get all "navbar-burger" elements
+		const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		// Add a click event on each of them
+		$navbarBurgers.forEach(el => {
+			el.addEventListener('click', () => {
+				// Get the target from the "data-target" attribute
+				const target = el.dataset.target;
+				const $target = document.getElementById(target);
+
+				// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+				el.classList.toggle('is-active');
+				$target.classList.toggle('is-active');
+			});
+		});
+	});
+</script>
+
+</html>
