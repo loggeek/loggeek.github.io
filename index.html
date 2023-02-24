@@ -2,23 +2,21 @@
 <html lang="fr-FR">
 
 <head>
-	<title>Logan Letellier - Portfolio</title>
+	<title>Logan Letellier - Portfolio - Page d'accueil</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles.css">
+
+	<script type="text/javascript" src="scripts.js"></script>
 <head>
 
-<style>
-	@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
-	@import 'https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap';
-
-	body {
-		font-family: "Didact Gothic", "Futura", "Tw Cen MT", sans-serif;
-	}
-</style>
-
 <body>
-	<nav class="navbar" role="navigation">
+	<nav class="navbar is-primary" role="navigation">
 		<div class="navbar-brand">
-			<a href="#" class="navbar-item title is-5">Logan LETELLIER - Étudiant en développement</a>
+			<a href="#" class="navbar-item">
+				<h1 class="title is-5">Logan LETELLIER - Étudiant en développement</h1>
+			</a>
 			<a role="button" class="navbar-burger" data-target="navbar">
 				<span></span>
 				<span></span>
@@ -26,131 +24,161 @@
 			</a>
 		</div>
 		<div id="navbar" class="navbar-menu">
+			<div class="navbar-start"></div>
 			<div class="navbar-end">
-				<a href="#about" class="button navbar-item">À propos</a>
-				<a href="#portfolio" class="button navbar-item">Réalisations</a>
-				<a href="#resources" class="button navbar-item">Ressources</a>
-				<a href="#contact" class="button navbar-item">Contact</a>
+				<a href="index.html" class="navbar-item">Présentation</a>
+				<a href="competences.html" class="navbar-item">Compétences</a>
+				<a href="realisations.html" class="navbar-item">Réalisations</a>
+				<a href="projet.html" class="navbar-item">Projet</a>
+				<a href="veilleit.html" class="navbar-item">Veille IT</a>
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a class="navbar-link">Contact</a>
+					<div class="navbar-dropdown">
+						<a href="https://github.com/loggeek" target="_blank" class="navbar-item">GitHub</a>
+						<a href="mailto:lletellier.contact@gmail.com" class="navbar-item">E-Mail</a>
+						<hr class="navbar-divider" />
+						<a href="CV.pdf" target="_blank" class="navbar-item">CV</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</nav>
 
-	<section id="about" class="section">
-		<h2 class="title">À propos</h2>
-		<div class="tile is-ancestor">
-			<div class="tile is-parent is-vertical">
-				<div class="tile is-child is-primary notification">
-					<h2 class="title is-4">Ma présentation</h2>
-					<p>
-						Je m'appelle Logan Letellier, j'ai 17 and et je suis actuellement étudiant en deuxième année de BTS SIO option SLAM
-							<i>(Services Informatiques aux Organisations; Solutions Logiciels et Applications Métiers)</i>.<br />
-						J'étudie par correspondance avec le CNED à l'aide du <a href="https://gip-cei.com/campus-connecte-redon/" target="_blank">Campus Connecté de Redon</a>.<br />
-						J'ai toujours été intéressé par l'informatique et la programmation, et ainsi me suis tourné vers ces études un an après l'obtention de mon baccalauréat scientifique,
-							après une année où j'ai eu l'opportunité d'effectuer des stages divers.
-					</p>
-				</div>
-			</div>
-			<div class="tile is-vertical">
-				<div class="tile is-parent">
-					<div class="tile is-child is-danger notification">
-						<h2 class="title is-4">Mes compétences</h2>
-						<p>
-							J'effectue principalement du développement back-end avec les langages Java, Rust et Python.<br />
-							J'utilise Linux, et possède des ainsi connaissances en scripting Bash.<br/>
-							Je possède aussi de l'expérience sur le framework front-end Qt.<br/>
-							J'ai aussi vu la création de sites web avec PHP/HTML/CSS, avec MySQL pour les bases de données.
-						</p>
-					</div>
-				</div>
-			<!--
-				<div class="tile is-parent">
-					<div class="tile is-child is-warning notification">
-						<h2 class="title is-4">Mes acti</h2>
-						<p>
-							TODO
-						</p>
-					</div>
-				</div>
-			-->
-			</div>
-		</div>
-	</section>
+	<div id="content">
+		<div class="container">
+			<section class="section">
+				<figure class="image is-128x128">
+					<img src="img/photo.jpg" />
+				</figure>
+			</section>
 
-	<section id="portfolio" class="section">
-		<h2 class="title">Réalisations</h2>
-		<div class="tile is-ancestor">
-			<div class="tile is-parent">
-				<div class="tile is-child is-info notification">
-					<h2 class="title is-4">Stage à HTTProject</h2>
-					<h3 class="subtitle is-6">Entreprise de gestion d'équiements d'automatisation</h3>
-					<a href="https://httproject.fr" target="_blank" class="subtitle is-6">Site de l'entreprise</a>
+			<section class="section">
+				<div class="content">
+					<h1>Ma présentation</h1>
 					<p>
-						J'ai travaillé dans la section spécialisée dans le pilotage et la supervision d'équipements relatifs à la gestion de l'eau.<br />
-						J'ai participé à la mise à jour d'un système d'interaction après le changement d'un des composants du système, avec le logiciel
-						<a href="https://inductiveautomation.com/ignition/" target="_blank">Ignition</a>.<br />
+						Je m'appelle Logan LETELLIER, j'ai 17 ans et je suis actuellement étudiant en deuxième année de BTS SIO option SLAM
+						<i>(Services Informatiques aux Organisations; Solutions Logiciels et Applications Métiers)</i>.
+					</p>
+					<p>
+						Je m'intéresse à la lecture et aux sciences depuis mon plus jeune âge. Dès trois ans, j'avais appris la lecture et démarré mon apprentissage de l'écriture.
+						Après divers tests, j'ai pu sauter deux classes en primaire puis une au collège, alors que j'étais en instruction à domicile.
+						À l'âge de 12 ans, j’ai passé le brevet des collèges en candidat libre et l'ai obtenu avec la mention Très Bien.
+					</p>
+					<p>
+						J'ai donc poursuivi l'instruction à domicile jusqu'à l'année de mon baccalauréat, que j'ai également obtenu en candidat libre à 15 ans avec mention Assez Bien.
+					</p>
+					<p>
+						Il était difficile de rentrer dans une école à mon âge, et je souhaitais prendre du temps pour choisir sereinement mon orientation.
+						Par conséquent, durant l'année scolaire 2021-2022, j'ai effectué une <a class="js-modal-trigger" data-target="intern-modal">année composée de stages divers</a> avec l'aide de la <a href="https://mijec.bzh" target="_blank">MIJEC de Redon</a>, pour déterminer vers quelles études me tourner.
+					</p>
+					<p>
+						Ceux-ci m'ont ainsi permis de trouver ma vocation et m'ont conforté dans l'idée que le domaine informatique était fait pour moi.
+						J'ai décidé de m'inscrire en BTS en informatique par correspondance avec le CNED, avec l'aide du <a href="https://gip-cei.com/campus-connecte-redon" target="_blank">Campus Connecté de Redon.</a>
+					</p>
+					<p>
+						Actuellement, je recherche une entreprise qui serait susceptible de m'accueillir pour poursuivre mes études en 3ème année de BUT en informatique en alternance.
 					</p>
 				</div>
-			</div>
-			<div class="tile is-parent">
-				<div class="tile is-child is-primary notification">
-					<h2 class="title is-4">Stage au lycée Marcel Callo</h2>
-					<h3 class="subtitle is-6">Lycée général, technologique et professionel</h3>
-					<a href="https://www.lyceemarcelcallo.org/" target="_blank" class="subtitle is-6">Site de l'établissement</a>
-					<p>
-						J'ai travaillé avec le responsable informatique de l'établissement.<br />
-						J'ai mis en place un système de <a href="https://fr.wikipedia.org/wiki/Plan_particulier_de_mise_en_s%C3%BBret%C3%A9" target="_blank">PPMS</a> en Python pour celui-ci,
-							et mis à jour un gestionnaire de paquets PHP/HTML, en ajoutant un fichier de configuration pour autogénérer l'affichage de la page.<br />
-						J'ai aussi participé à la préparation d'équipement informatique pour l'utilisation de l'établissement.
-					</p>
+			</section>
+
+			<section class="section">
+				<div class="content">
+					<h1>Mes centres d'intérêt</h1>
 				</div>
+				<div class="columns">
+					<div class="column section is-medium" style="background-image: url(https://lelephant-larevue.fr/wp-content/uploads/2016/04/capture-decran-2017-05-23-a-10.51.42-1024x681-1-571x380.png); background-size: auto 100%; background-repeat: no-repeat; text-align: right;">
+						<a href="interets.html#echecs" class="button is-link">Échecs</a>
+					</div>
+					<div class="column section is-medium" style="background-image: url(https://parlonspiano.com/public/admin/piano.jpg); background-size: auto 100%; background-repeat: no-repeat; text-align: right;">
+						<a href="interets.html#musique" class="button is-link">Musique</a>
+					</div>
+					<div class="column section is-medium" style="background-image: url(https://thumbs.dreamstime.com/b/mat%C3%A9riel-de-sport-2-22802518.jpg); background-size: auto 100%; background-repeat: no-repeat; text-align: right;">
+						<a href="interets.html#sport" class="button is-link">Sport</a>
+					</div>
+					<div class="column section is-medium" style="background-image: url(https://www.en-vols.com/wp-content/uploads/afmm/2022/02/livres-ouverts_shutterstock_1840804387.jpg); background-size: auto 100%; background-repeat: no-repeat; text-align: right;">
+						<a href="interets.html#lecture" class="button is-link">Lecture</a>
+					</div>
+				</div>
+			</section>
+
+			<div id="intern-modal" class="modal">
+				<div class="modal-background"></div>
+				<div class="modal-content">
+					<div class="box">
+						<div class="content">
+							<h3>Octobre-novembre 2020</h3>
+							<p>
+								Stage à <a href="https://fr.linkedin.com/in/thierry-degraeve-9b98641b4">ISPFORMA</a> (45),
+								entreprise spécialisée dans la formation en prévention, en secourisme et en sécurité en cas d'incendie.
+							</p>
+							<ul>
+								<li>Formation en premiers secours <a href="img/ps.jpg" target="_blank"><i class="fa fa-camera"></i></a></li>
+								<li>Formation de guide-file/serre-file <a href="img/epi.jpg" target="_blank"><i class="fa fa-camera"></i></a></li>
+								<li>Formation SST</li>
+							</ul>
+
+							<h3>Novembre-décembre 2020</h3>
+							<p>
+								Stage en boulangerie à Saint-Vincent sur Oust (56) <i><sub>(fermée à ce jour)</sub></i>.
+							</p>
+							<ul>
+								<li>Fabrication des préparation salées</li>
+								<li>Aide à la préparation du pain et des viennoiseries</li>
+								<li>Vente</li>
+							</ul>
+
+							<h3>Janvier 2021</h3>
+							<p>
+								Stage à la menuiserie <a href="https://www.sopac.net/">SOPAC</a> à Carentoir (56).
+							</p>
+							<ul>
+								<li>Assistance à la gestion des commandes</li>
+								<li>Observation de la fabrication des portes et fenêtres</li>
+								<li>Mesure de la durée des étapes des fabrications</li>
+							</ul>
+
+							<h3>Février 2021</h3>
+							<p>
+								Stage en télétravail avec l'autoentrepreneur <a href="https://fr.linkedin.com/in/ga%C3%ABl-pouger-66338693">
+								Gaël Pouger</a>, qui sous-traite pour une entreprise fabriquant des systèmes de paiement
+								pour des distributeurs automatiques.
+							</p>
+							<ul>
+								<li>Modification d'un outil utilisé pour les tests de l'application</li>
+								<li>Mise à jour du système de paiement sans contact, en implémenentant le protocole TCP</li>
+								<li>Gestion et amélioration de la machine d'état du logiciel</li>
+							</ul>
+
+							<h3>Mars-mai 2021</h3>
+							<p>
+								Stage avec Serge Coudé, le responsable informatique de <a href="https://www.issat.info/">l'ISSAT</a> (35)</p>.
+							<ul>
+								<li>Création et déploiement d'une application permettant de localiser les postes de l'établissement
+								et de les rechercher par adresse IP ou par leur nom</li>
+								<li>Création d'une application permettant d'envoyer une alerte sur les postes du lycée
+								en cas d'évènement grave</li>
+								<li>Aide à la maintenance du matériel informatique</li>
+							</ul>
+
+							<p>
+								Sur le courant de l'année, j'ai aussi effectué des stages au
+								<a href="https://magasins.supercasino.fr/supermarche/la-gacilly/CS770">supermarché Casino La Gacilly</a> (56),
+								où j'ai rempli des rôles divers tel que le retrait des périmés, la caisse, les promotions, les commandes,
+								un inventaire partiel, et la comptabilité.
+							</p>
+						</div>
+					</div>
+				</div>
+				<button class="modal-close is-large"></button>
 			</div>
 		</div>
-	</section>
-<!--
-	<section id="resources" class="section">
-		<h2 class="title">Veille technologique</h2>
-		<h3>À ce jour, ma veille informatique consiste notamment de vidéos de ces chaînes (dont le contenu est en anglais):</h3>
-		<p>
-			Mental Outlaw: - <a href="https://www.youtube.com/@MentalOutlaw" target="_blank">Youtube</a> - <a href="https://odysee.com/@AlphaNerd:8" target="_blank">Odysee</a><br />
-			Fireship - <a href="https://www.youtube.com/@Fireship" target="_blank">Youtube</a><br />
-		</p>
-	</section>
--->
-	<section id="contact" class="hero is-info">
-		<div class="hero-body">
-			<h2 class="title">Contact</h2>
-			<nav class="level is-mobile">
-				<a href="https://github.com/loggeek" target="_blank" class="button is-link level-item" has-text-centered>GitHub</a>
-				<a href="mailto:lletellier.contact@gmail.com" class="button is-link level-item has-text-centered">E-Mail</a>
-			</nav><br />
-			<a href="cv.pdf" target="_blank" class="button is-primary">Obtenir mon CV</a>
+	</div>
+
+	<footer id="contact" class="hero is-primary">
+		<div class="hero-foot" style="text-align: center;">
+			<h1>Logan LETELLIER © 2022-2023 Tous droits réservés.</h1>
 		</div>
-		<div class="hero-foot" align="center">
-			Logan LETELLIER – &copy; 2022-2023 Tous droits réservés.<br />
-			<a href="https://bulma.io" target="_blank"><img src="https://bulma.io/images/made-with-bulma--white.png" style="width: 10%;"/></a>.
-		</div>
-	</section>
+	</footer>
 </body>
-
-<script>
-	// Code from bulma.io
-	document.addEventListener('DOMContentLoaded', () => {
-		// Get all "navbar-burger" elements
-		const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-		// Add a click event on each of them
-		$navbarBurgers.forEach(el => {
-			el.addEventListener('click', () => {
-				// Get the target from the "data-target" attribute
-				const target = el.dataset.target;
-				const $target = document.getElementById(target);
-
-				// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-				el.classList.toggle('is-active');
-				$target.classList.toggle('is-active');
-			});
-		});
-	});
-</script>
 
 </html>

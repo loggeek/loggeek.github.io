@@ -1,0 +1,38 @@
+@import "https://jenil.github.io/bulmaswatch/darkly/bulmaswatch.min.css";
+/* @import 'https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap';
+
+body {
+	font-family: "Didact Gothic", "Futura", "Tw Cen MT", sans-serif;
+}
+*/
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+#content {
+	flex: 1;
+}
+
+.pie {
+	--w:100px;
+	
+	width: var(--w);
+	aspect-ratio: 1;
+	position: relative;
+	display: inline-grid;
+	place-content: center;
+	margin: 5px;
+}
+
+.pie:before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	inset: 0;
+	background: conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+	-webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+		mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+}
