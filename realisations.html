@@ -62,49 +62,55 @@
 					<p>
 						J'y ai effectué un stage avec le responsable du service informatique de l'établissement, Éric ABBANE, du 7 novembre au 9 décembre 2022.
 					</p>
-					<h3>Logiciel de PPMS</h3>
-					<p>
-						L'établissement avait besoin d'une solution pour prévenir les membres du personnel en cas d'urgence, tel qu'un sinistre ou un attentat.
-					</p>
-					<p>
-						J'ai donc créé et mis en place un logiciel PPMS utilisé actuellement, acronyme de Plan Particulier de Mise en Sûreté. Celui-ci permet à des personnes à l'accueil d'envoyer des messages d'alerte, qui seront affichés sous forme d'écran aux autres.
-					</p>
-					<p>
-						J'ai utilisé Python pour créer ce logiciel, avec <a href="https://riverbankcomputing.com/software/pyqt/" target="_blank">PyQt</a> pour l'interface <em>(hormis le serveur dont les logs sont affichés sur un terminal)</em> et <a href="https://pyinstaller.org/en/stable/" target="_blank">PyInstaller</a> pour compiler vers les ordinateurs.
-					</p>
-					<p>
-						Le logiciel se compose de trois applications; un serveur TCP qui reçoit les requêtes d'alerte et les transmet aux postes, un <i>"sender"</i> qui possède l'autorisation d'envoyer des requêtes au serveur, et un <i>"receiver"</i> qui les reçoit et les affiche.
-					</p>
-					<p>
-						Le <i>"sender"</i> et le <i>"receiver"</i> se lancent tous deux en arrière-plan sur les postes des utilisateurs ; mais tandis que le <i>"receiver"</i> est complètement invisible, le <i>"sender"</i> affiche une icône dans la zone de notification, ce qui lui fait prendre peu de place. Si une alerte doit être envoyée, l'utilisateur clique sur l'icône, sélectionne le message parmi la liste des message prédéfinis, le modifie si nécessaire, et l'envoie pour être affiché sur tous les postes.
-					</p>
-					<a href="https://github.com/loggeek/ppms" target="_blank" class="button is-link">Lien vers le dépôt</a>
-					<h3>Gestionnaire de paquets</h3>
-					<p>
-						Le responsable informatique, pour simplifier l'accès aux logiciels à installer sur les postes du lycée, utilisait un site intranet hébergé dans le serveur de l'établissement. Mais les logiciels présents n'étaient plus à jour, et de nouveaux s'étaient greffés.
-					</p>
-					<p>
-						Par conséquent, j'ai été chargé de mettre à jour ce site en récupérant les nouveaux logiciels, ajoutant les scripts pour les installations de plusieurs logiciels à la fois.
-					</p>
-					<p>
-						J'ai pour ce faire conservé le fichier de styles CSS préexistant, et généreé le contenu avec du PHP et un fichier de configuration INI.
-					</p>
-					<p>
-						J'ai modifié la structure du site pour permettre l'insertion procédurielle de contenu à partir d'un fichier de configuration, qui comporte les rubriques, les noms de fichiers et la description de chaque logiciel. J'ai aussi réparé une vulnérabilité d'un des scripts d'installation, celui-ci contenant le mot de passe administrateur en texte brut.
-					</p>
-					<p>
-						Lorsque le site est ouvert, il y a ainsi une barre latérale de menu générée automatiquement, une rubrique pour les scripts d'installation créés par le responsable informatique, et plusieurs rubriques pour les autres logiciels qui peuvent être installés directement en cliquant sur un lien.
-					</p>
-					<h3>Maintenance de matériel</h3>
-					<p>
-						J'ai aussi effectué plusieurs tâches de préparation d'appareils pour l'établissement.
-					</p>
-					<p>
-						J'ai aidé le responsable informatique à préparer des iPads qui avaient été retournés au lycée après leur réparation. J'ai ainsi initialisé les appareils, les ai mis à jour si nécessaire, ai installé les logiciels d'éducations et verrous de l'établissement.
-					</p>
-					<p>
-						J'ai aussi réinitialisé et préparé des tablettes Android de marque Huawei, et mis en place un Mac pour un professeur de l'établissement.
-					</p>
+					<section class="section">
+						<h3>Logiciel de PPMS</h3>
+						<p>
+							L'établissement avait besoin d'une solution pour prévenir les membres du personnel en cas d'urgence, tel qu'un sinistre ou un attentat.
+						</p>
+						<p>
+							J'ai donc créé et mis en place un logiciel PPMS utilisé actuellement, acronyme de Plan Particulier de Mise en Sûreté. Celui-ci permet à des personnes à l'accueil d'envoyer des messages d'alerte, qui seront affichés sous forme d'écran aux autres.
+						</p>
+						<p>
+							J'ai utilisé Python pour créer ce logiciel, avec <a href="https://riverbankcomputing.com/software/pyqt/" target="_blank">PyQt</a> pour l'interface <em>(hormis le serveur dont les logs sont affichés sur un terminal)</em> et <a href="https://pyinstaller.org/en/stable/" target="_blank">PyInstaller</a> pour compiler vers les ordinateurs.
+						</p>
+						<p>
+							Le logiciel se compose de trois applications; un serveur TCP qui reçoit les requêtes d'alerte et les transmet aux postes, un <i>"sender"</i> qui possède l'autorisation d'envoyer des requêtes au serveur, et un <i>"receiver"</i> qui les reçoit et les affiche.
+						</p>
+						<p>
+							Le <i>"sender"</i> et le <i>"receiver"</i> se lancent tous deux en arrière-plan sur les postes des utilisateurs ; mais tandis que le <i>"receiver"</i> est complètement invisible, le <i>"sender"</i> affiche une icône dans la zone de notification, ce qui lui fait prendre peu de place. Si une alerte doit être envoyée, l'utilisateur clique sur l'icône, sélectionne le message parmi la liste des message prédéfinis, le modifie si nécessaire, et l'envoie pour être affiché sur tous les postes.
+						</p>
+						<a href="https://github.com/loggeek/ppms" target="_blank" class="button is-link">Lien vers le dépôt</a>
+					</section>
+					<section class="section">
+						<h3>Gestionnaire de paquets</h3>
+						<p>
+							Le responsable informatique, pour simplifier l'accès aux logiciels à installer sur les postes du lycée, utilisait un site intranet hébergé dans le serveur de l'établissement. Mais les logiciels présents n'étaient plus à jour, et de nouveaux s'étaient greffés.
+						</p>
+						<p>
+							Par conséquent, j'ai été chargé de mettre à jour ce site en récupérant les nouveaux logiciels, ajoutant les scripts pour les installations de plusieurs logiciels à la fois.
+						</p>
+						<p>
+							J'ai pour ce faire conservé le fichier de styles CSS préexistant, et généreé le contenu avec du PHP et un fichier de configuration INI.
+						</p>
+						<p>
+							J'ai modifié la structure du site pour permettre l'insertion procédurielle de contenu à partir d'un fichier de configuration, qui comporte les rubriques, les noms de fichiers et la description de chaque logiciel. J'ai aussi réparé une vulnérabilité d'un des scripts d'installation, celui-ci contenant le mot de passe administrateur en texte brut.
+						</p>
+						<p>
+							Lorsque le site est ouvert, il y a ainsi une barre latérale de menu générée automatiquement, une rubrique pour les scripts d'installation créés par le responsable informatique, et plusieurs rubriques pour les autres logiciels qui peuvent être installés directement en cliquant sur un lien.
+						</p>
+					</section>
+					<section class="section">
+						<h3>Maintenance de matériel</h3>
+						<p>
+							J'ai aussi effectué plusieurs tâches de préparation d'appareils pour l'établissement.
+						</p>
+						<p>
+							J'ai aidé le responsable informatique à préparer des iPads qui avaient été retournés au lycée après leur réparation. J'ai ainsi initialisé les appareils, les ai mis à jour si nécessaire, ai installé les logiciels d'éducations et verrous de l'établissement.
+						</p>
+						<p>
+							J'ai aussi réinitialisé et préparé des tablettes Android de marque Huawei, et mis en place un Mac pour un professeur de l'établissement.
+						</p>
+					</section>
 					<h2>HTTProject</h2>
 					<figure class="image is-64x64">
 						<a href="https://httproject.fr/" target="_blank">
@@ -117,32 +123,35 @@
 					<p>
 						J'y ai effectué un stage dans la section spécialisée sur la gestion de l'eau du 6 juin au 8 juillet 2022.
 					</p>
-					<h3>Refonte d'une application avec Ignition</h3>
-					<p>
-						L'entreprise utilise le logiciel <a href="https://inductiveautomation.com/distributor-landing/francais" target="_blank">Ignition</a> pour collecter et restituer les données sur les stations d'eau et postes de relevage, qui sont mesurées par des équipements <a href="https://www.lacroix-environment.fr/" target="_blank">SOFREL</a>. Pour effectuer la liaison, elle utilisait le logiciel tiers DevIO; mais ce logiciel était défaillant et tombait fréquemment en panne.
-					</p>
-					<p>
-						Par conséquent, j'ai participé à la mise en place d'un remplacement pour ce logiciel, en modifiant les scripts utilisés pour l'interaction avec la base de données, ainsi que les diagrammes utilisés pour la visualisation des données.
-					</p>
-					<p>
-						J'ai utilisé l'outil Ignition mentionné précédemment, Python pour les scripts, et SQL pour la gestion des bases de données.
-					</p>
-					<p>
-						Ainsi, une nouvelle base de données a été créée et j'ai revu les scripts utilisés pour le transfert direct des données vers et à partir de cette base et retranscrit les diagrammes pour qu'il interagissent correctement avec celle-ci.
-					</p>
-
+					<section class="section">
+						<h3>Refonte d'une application avec Ignition</h3>
+						<p>
+							L'entreprise utilise le logiciel <a href="https://inductiveautomation.com/distributor-landing/francais" target="_blank">Ignition</a> pour collecter et restituer les données sur les stations d'eau et postes de relevage, qui sont mesurées par des équipements <a href="https://www.lacroix-environment.fr/" target="_blank">SOFREL</a>. Pour effectuer la liaison, elle utilisait le logiciel tiers DevIO; mais ce logiciel était défaillant et tombait fréquemment en panne.
+						</p>
+						<p>
+							Par conséquent, j'ai participé à la mise en place d'un remplacement pour ce logiciel, en modifiant les scripts utilisés pour l'interaction avec la base de données, ainsi que les diagrammes utilisés pour la visualisation des données.
+						</p>
+						<p>
+							J'ai utilisé l'outil Ignition mentionné précédemment, Python pour les scripts, et SQL pour la gestion des bases de données.
+						</p>
+						<p>
+							Ainsi, une nouvelle base de données a été créée et j'ai revu les scripts utilisés pour le transfert direct des données vers et à partir de cette base et retranscrit les diagrammes pour qu'il interagissent correctement avec celle-ci.
+						</p>
+					</section>
 					<h1>Mes réalisations personnelles</h1>
-					<h2>Système de gestion de classement d'échecs</h2>
-					<p>
-						J'ai créé un logiciel permettant de gérer le classement de joueurs d'échecs avec le système <a href="https://www.glicko.net/glicko.html" target="_blank">Glicko</a>.
-					</p>
-					<p>
-						J'ai utilisé Java pour créer ce logiciel, avec Swing pour l'interface utilisateur. J'ai aussi mis en place une configuration par fichiers de langage, ainsi que des fichiers de sauvegarde CSV.
-					</p>
-					<p>
-						Le système permet de créer et de supprimer des joueurs, créer des parties entre eux et calculer leurs classements avec un outil prééxistant. Il permet aussi de les sauvegarder et de les recharger à l'aide d'un fichier local.
-					</p>
-					<a href="https://github.com/loggeek/GlickoGestionSystem" target="_blank" class="button is-link">Lien vers le dépôt</a>
+					<section class="section">
+						<h2>Système de gestion de classement d'échecs</h2>
+						<p>
+							J'ai créé un logiciel permettant de gérer le classement de joueurs d'échecs avec le système <a href="https://www.glicko.net/glicko.html" target="_blank">Glicko</a>.
+						</p>
+						<p>
+							J'ai utilisé Java pour créer ce logiciel, avec Swing pour l'interface utilisateur. J'ai aussi mis en place une configuration par fichiers de langage, ainsi que des fichiers de sauvegarde CSV.
+						</p>
+						<p>
+							Le système permet de créer et de supprimer des joueurs, créer des parties entre eux et calculer leurs classements avec un outil prééxistant. Il permet aussi de les sauvegarder et de les recharger à l'aide d'un fichier local.
+						</p>
+						<a href="https://github.com/loggeek/GlickoGestionSystem" target="_blank" class="button is-link">Lien vers le dépôt</a>
+					</section>
 				</div>
 			</section>
 		</div>
